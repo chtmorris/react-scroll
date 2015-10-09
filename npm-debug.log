@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/agoosester/Documents/Dev/Web/React/React-Scroll',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/agoosester/.npm/react-scroll/0.0.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/agoosester/.npm/react-scroll/0.0.1/package.tgz',
+9 verbose tar pack   '/Users/agoosester/Documents/Dev/Web/React/React-Scroll' ]
+10 verbose tarball /Users/agoosester/.npm/react-scroll/0.0.1/package.tgz
+11 verbose folder /Users/agoosester/Documents/Dev/Web/React/React-Scroll
+12 info prepublish react-scroll@0.0.1
+13 verbose addLocalTarball adding from inside cache /Users/agoosester/.npm/react-scroll/0.0.1/package.tgz
+14 silly cache afterAdd react-scroll@0.0.1
+15 verbose afterAdd /Users/agoosester/.npm/react-scroll/0.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /Users/agoosester/.npm/react-scroll/0.0.1/package/package.json written
+17 silly publish { name: 'react-scroll',
+17 silly publish   version: '0.0.1',
+17 silly publish   description: 'A scroll component for React.js',
+17 silly publish   main: 'modules',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/fisshy/react-scroll.git' },
+17 silly publish   scripts: { examples: 'webpack-dev-server --config examples/webpack.config.js --no-info --content-base examples' },
+17 silly publish   homepage: 'https://github.com/fisshy/react-scroll',
+17 silly publish   bugs: { url: 'https://github.com/fisshy/react-scroll/issues' },
+17 silly publish   authors: [ 'Joachim Karlsson' ],
+17 silly publish   license: 'MIT',
+17 silly publish   tags: [ 'react', 'scroll' ],
+17 silly publish   keywords: [ 'react', 'react-component', 'scroll', 'scroller', 'scrolls' ],
+17 silly publish   peerDependencies: { react: '^0.14.0-rc1', 'react-dom': '^0.14.0-rc1' },
+17 silly publish   devDependencies:
+17 silly publish    { 'babel-core': '^4.6.0',
+17 silly publish      'babel-loader': '^4.0.0',
+17 silly publish      gulp: '^3.8.11',
+17 silly publish      'gulp-concat': '^2.5.2',
+17 silly publish      webpack: '^1.6.0',
+17 silly publish      'webpack-dev-server': '^1.7.0' },
+17 silly publish   readme: '## React Scroll\n\nDirective for basic scrolling and smooth scrolling ( work in progress )\nFeel free to contribute - everything is appreciated\n\n### Install\n```js\n$ npm install react-scroll\n```\n\n### Run\n```js\n$ npm install\n$ npm run examples\n```\n\n### Examples\nCheckout examples\n> Basic\n>> [Live](http://fisshy.github.io/react-scroll-example/basic/index.html)\n>> Or\n>> [Code](https://github.com/fisshy/react-scroll/blob/master/examples/basic/app.js)\n\n### Usage\n```js\n\nvar React = require(\'react\');\nvar Scroll = require(\'react-scroll\'); \n\nvar Link = Scroll.Link;\nvar Element = Scroll.Element;\n\nvar Section = React.createClass({\n  render: function () {\n  \treturn (\n  \t\t<Link to="test1" spy={true} smooth={true} offset={50} duration={500} >Test 1</Link>\n\t\t<Button className="btn" type="submit" value="Test 2" to="test2" spy={true} smooth={true} offset={50} duration={500} >Test 2</Button>\n\n  \t\t<Element name="test1" className="element">\n  \t\t  test 1\n  \t\t</Element>\n\n  \t\t<Element name="test2" className="element">\n  \t\t  test 2\n  \t\t</Element>\n\t);\n  }\n});\n\nReact.render(\n  <Section />,\n  document.getElementById(\'example\')\n);\n\n```\n\n#### Create your own Link/Element\n> Simply just include the mixins!\n\n```js\nvar React = require(\'react\');\nvar Scroll = require(\'react-scroll\'); \nvar Helpers = Scroll.Helpers;\n\nvar Element = React.createClass({\n  mixins: [Helpers.Element],\n  render: function () {\n    return (\n      <div>\n        {this.props.children}\n      </div>\n    );\n  }\n});\n\nvar Link = React.createClass({\n  mixins: [Helpers.Scroll],\n  render: function () {\n    return (\n      <a onClick={this.onClick}>\n        {this.props.children}\n      </a>\n    );\n  }\n});\n\n```\n\n\n\n### Todo\n- [x] Vertical scrolling\n- [x] Scroll to element\n- [x] Smooth scroll animation\n- [x] Live examples\n- [x] Pass scroll/animation duration as settings\n- [ ] Horizontal scrolling\n- [x] Spy on scrolling/Highlight\n- [ ] Write test\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '455d5a20f085c7456330e3dea458fa1d69f50af7',
+17 silly publish   _id: 'react-scroll@0.0.1',
+17 silly publish   _shasum: '87bc75841e647778b5ad968d626ca16d704abd40',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name react-scroll
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/react-scroll
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/agoosester/.npm/react-scroll/0.0.1/package.tgz
+25 verbose request uri https://registry.npmjs.org/react-scroll
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 11:53:42 AM
+28 verbose request using bearer token for auth
+29 verbose request id 9626a1ee507846e8
+30 http request PUT https://registry.npmjs.org/react-scroll
+31 http 403 https://registry.npmjs.org/react-scroll
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '104',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Fri, 09 Oct 2015 03:53:43 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-hkg6820-HKG',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1444362822.994957,VS0,VE704' }
+33 verbose request invalidating /Users/agoosester/.npm/registry.npmjs.org/react-scroll on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: You do not have permission to publish 'react-scroll'. Are you logged in as the correct user? : react-scroll
+35 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1073:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1019:12)
+36 verbose statusCode 403
+37 verbose pkgid react-scroll
+38 verbose cwd /Users/agoosester/Documents/Dev/Web/React/React-Scroll
+39 error Darwin 14.4.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.0.0
+42 error npm  v2.14.2
+43 error code E403
+44 error You do not have permission to publish 'react-scroll'. Are you logged in as the correct user? : react-scroll
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
