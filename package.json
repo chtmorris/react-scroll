@@ -1,5 +1,5 @@
 {
-  "name": "react-scroll-no-ReactDOM-dependency",
+  "name": "react-scroll-no-reactdom-dependency",
   "version": "0.0.1",
   "description": "A scroll component for React.js without the need for ReactDOM",
   "main": "modules",
